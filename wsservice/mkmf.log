@@ -1,0 +1,246 @@
+have_library: checking for main() in -laxis2_axiom... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.      -lruby.1.9.1  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.      -lruby.1.9.1 -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -lwsdlc... -------------------- no
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxis2_axiom  -lruby.1.9.1 -lwsdlc -laxis2_axiom  -lpthread -ldl -lobjc "
+ld: library not found for -lwsdlc
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxis2_axiom  -lruby.1.9.1 -lwsdlc -laxis2_axiom  -lpthread -ldl -lobjc "
+ld: library not found for -lwsdlc
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { main(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -laxutil... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxis2_axiom  -lruby.1.9.1 -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -laxis2_minizip... -------------------- no
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxutil -laxis2_axiom  -lruby.1.9.1 -laxis2_minizip -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+ld: library not found for -laxis2_minizip
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxutil -laxis2_axiom  -lruby.1.9.1 -laxis2_minizip -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+ld: library not found for -laxis2_minizip
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { main(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -laxis2_parser... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxutil -laxis2_axiom  -lruby.1.9.1 -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -laxis2_engine... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxis2_parser -laxutil -laxis2_axiom  -lruby.1.9.1 -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -laxis2_http_common... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lruby.1.9.1 -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -laxis2_http_sender... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lruby.1.9.1 -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -laxis2_http_receiver... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lruby.1.9.1 -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -laxis2_engine... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lruby.1.9.1 -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -lneethi... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lruby.1.9.1 -lneethi -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -lneethi_util... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -lneethi -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lruby.1.9.1 -lneethi_util -lneethi -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -lmod_rampart... -------------------- yes
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -lneethi_util -lneethi -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lruby.1.9.1 -lmod_rampart -lneethi_util -lneethi -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -lsandesha2... -------------------- no
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -lmod_rampart -lneethi_util -lneethi -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lruby.1.9.1 -lsandesha2 -lmod_rampart -lneethi_util -lneethi -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+ld: library not found for -lsandesha2
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+"clang -o conftest -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/x86_64-darwin11.2.0 -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/ruby/backward -I/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1 -I. -I/opt/wso2/wsf_c/include/rampart-1.3.0 -I/opt/wso2/wsf_c/include/axis2-1.6.0 -I../wsdlc/include -I/Users/carloespinosa/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/carloespinosa/.rvm/rubies/ruby-1.9.3-p0/lib -L/opt/wso2/wsf_c/modules/rampart -L/opt/wso2/wsf_c/lib -L../wsdlc/lib -L/Users/carloespinosa/.rvm/usr/lib -L.     -lmod_rampart -lneethi_util -lneethi -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lruby.1.9.1 -lsandesha2 -lmod_rampart -lneethi_util -lneethi -laxis2_engine -laxis2_http_receiver -laxis2_http_sender -laxis2_http_common -laxis2_engine -laxis2_parser -laxutil -laxis2_axiom  -lpthread -ldl -lobjc "
+ld: library not found for -lsandesha2
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { main(); return 0; }
+/* end */
+
+--------------------
+

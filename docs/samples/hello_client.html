@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="">
+  <title></title>
+</head>
+
+<body>
+<pre>require 'wsf'
+
+include WSO2::WSF
+
+req_payload_string = &lt;&lt;XML
+<ns1:greet xmlns:ns1="http://ws.apache.org/axis2/services/hello">
+    <text>Hello World!</text>
+</ns1:greet>
+XML
+
+begin
+  LOG_FILE_NAME = "ruby_hello_client.log"
+  END_POINT = "http://localhost:9090/hello_service/greet"
+  
+  client = WSClient.new({},
+                        LOG_FILE_NAME)
+
+  req_message = WSMessage.new(req_payload_string,
+                              nil,
+                              {"to" =&gt; END_POINT})
+
+  puts "Sending OM : " &lt;&lt; "\n" &lt;&lt; req_payload_string &lt;&lt; "\n" 
+
+  res_message = client.request(req_message)
+
+  if not res_message.nil? then
+    puts "Received OM : " &lt;&lt; "\n" &lt;&lt; res_message.payload_to_s &lt;&lt; "\n\n"
+    puts "Client invocation SUCCESSFUL !!!"
+  else
+    puts "Client invocation FAILED !!!"
+  end
+rescue WSFault =&gt; wsfault
+  puts "Client invocation FAILED !!!\n"
+  puts "WSFault : "
+  puts wsfault.xml
+  puts "----------"
+  puts wsfault.code
+  puts "----------"
+  puts wsfault.reason
+  puts "----------"
+  puts wsfault.role
+  puts "----------"
+  puts wsfault.detail
+  puts "----------"
+rescue =&gt; exception
+  puts "Client invocation FAILED !!!\n"
+  puts "Exception : " &lt;&lt; exception
+end
+</pre>
+</body>
+</html>
