@@ -592,7 +592,7 @@ PACKAGE_STRING='wsdlc 1.0.0'
 PACKAGE_BUGREPORT=''
 PACKAGE_URL=''
 
-ac_default_prefix=/usr/local/wsdlc
+ac_default_prefix=/opt/wso2/wsf_c
 # Factoring default headers for most tests.
 ac_includes_default="\
 #include <stdio.h>

@@ -18,8 +18,8 @@
 #include <axutil_string.h>
 #include <axiom.h>
 
-#include "wsf_wsdl_defines.h"
-#include "wsf_wsdl_data_template.h"
+#include "../include/wsf_wsdl_defines.h"
+#include "../include/wsf_wsdl_data_template.h"
 
 
 /** 

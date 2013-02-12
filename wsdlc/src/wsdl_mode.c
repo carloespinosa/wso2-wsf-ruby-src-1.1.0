@@ -26,7 +26,7 @@
 #include <axis2_policy_include.h>
 #include <neethi_engine.h>
 
-#include "wsf_wsdl_mode.h"
+#include "../include/wsf_wsdl_mode.h"
 
 /** 
 * initializes the service and create the wsdl_info_t structure */

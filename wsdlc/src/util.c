@@ -30,9 +30,9 @@
 #include <axis2_policy_include.h>
 #include <neethi_engine.h>
 
-#include "wsf_wsdl_defines.h"
-#include "wsf_wsdl_data_template.h"
-#include "wsf_wsdl_util.h"
+#include "../include/wsf_wsdl_defines.h"
+#include "../include/wsf_wsdl_data_template.h"
+#include "../include/wsf_wsdl_util.h"
 
 /**
 * This function is responsible of selecting client options from either user_parameters or from sig_axiom */

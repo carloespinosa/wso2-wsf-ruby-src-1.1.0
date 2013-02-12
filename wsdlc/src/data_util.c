@@ -28,12 +28,12 @@
 #include <axis2_policy_include.h>
 #include <neethi_engine.h>
 
-#include "wsf_wsdl_defines.h"
-#include "wsf_wsdl_data.h"
-#include "wsf_wsdl_data_template.h"
-#include "wsf_wsdl_data_util.h" 
-#include "wsf_wsdl_type_map.h"
-#include "wsf_wsdl_util.h"
+#include "../include/wsf_wsdl_defines.h"
+#include "../include/wsf_wsdl_data.h"
+#include "../include/wsf_wsdl_data_template.h"
+#include "../include/wsf_wsdl_data_util.h" 
+#include "../include/wsf_wsdl_type_map.h"
+#include "../include/wsf_wsdl_util.h"
 
 void 
 wsdl_data_to_axiom_node(const axutil_env_t* env, axis2_char_t* local_name,

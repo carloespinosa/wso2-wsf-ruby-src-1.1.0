@@ -28,12 +28,12 @@
 #include <axis2_policy_include.h>
 #include <neethi_engine.h>
 
-#include "wsf_wsdl_defines.h"
-#include "wsf_wsdl_data.h"
-#include "wsf_wsdl_data_template.h"
-#include "wsf_wsdl_data_util.h"
-#include "wsf_wsdl_info.h"
-#include "wsf_wsdl_util.h"
+#include "../include/wsf_wsdl_defines.h"
+#include "../include/wsf_wsdl_data.h"
+#include "../include/wsf_wsdl_data_template.h"
+#include "../include/wsf_wsdl_data_util.h"
+#include "../include/wsf_wsdl_info.h"
+#include "../include/wsf_wsdl_util.h"
 
 axis2_status_t
 wsf_wsdl_util_get_all_policies_from_wsdl(

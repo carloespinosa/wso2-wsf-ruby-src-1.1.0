@@ -18,8 +18,8 @@ def install_rb_lib_files(src_dir, site_lib_dir)
 end
     
 begin
-    site_arch_dir = Config::CONFIG['sitearchdir']
-    site_lib_dir = Config::CONFIG['sitelibdir']
+    site_arch_dir = RbConfig::CONFIG['sitearchdir']
+    site_lib_dir = RbConfig::CONFIG['sitelibdir']
 
     # install wsf.rb
     install_rb_lib_files("lib", site_lib_dir)

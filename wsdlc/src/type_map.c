@@ -16,8 +16,8 @@
 
 #include <axiom_util.h>
 
-#include "wsf_wsdl_defines.h"
-#include "wsf_wsdl_type_map.h"
+#include "../include/wsf_wsdl_defines.h"
+#include "../include/wsf_wsdl_type_map.h"
 
 /* 
 <type-map>

@@ -27,8 +27,8 @@
 #include <libxslt/transform.h>
 #include <libxslt/xsltutils.h>
 
-#include "wsf_wsdl_mode.h"
-#include "wsf_wsdl_util.h"
+#include "../include/wsf_wsdl_mode.h"
+#include "../include/wsf_wsdl_util.h"
 
 extern int xmlLoadExtDtdDefaultValue;
 

@@ -18,8 +18,8 @@
 #include <axutil_array_list.h>
 #include <axutil_string.h>
 
-#include "wsf_wsdl_defines.h"
-#include "wsf_wsdl_data.h"
+#include "../include/wsf_wsdl_defines.h"
+#include "../include/wsf_wsdl_data.h"
 
 /** 
 * creates the wsf_wsdl_data_t structure as a complex object  */
