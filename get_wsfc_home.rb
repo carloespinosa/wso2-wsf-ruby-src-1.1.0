@@ -2,4 +2,4 @@
 
 require "rbconfig"
 
-puts ::Config::CONFIG["WSFC_HOME"].to_s
+puts ::RbConfig::CONFIG["WSFC_HOME"].to_s

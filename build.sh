@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wsfc_home=$(./get_wsfc_home.rb)
+wsfc_home=$(ruby ./get_wsfc_home.rb)
 
 cd wsdlc
 sh autogen.sh

@@ -4,7 +4,7 @@ require 'mkmf'
 require 'rbconfig'
 
 # Check the configurations
-WSFC_HOME = Config::CONFIG['WSFC_HOME']
+WSFC_HOME = RbConfig::CONFIG['WSFC_HOME']
 if(WSFC_HOME == nil)
   puts "Error in retrieving the WSFC_HOME from configuration, Add the WSFC_HOME in rbconfig.rb\n"
   exit(-1)
